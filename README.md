@@ -15,6 +15,7 @@ roles:
 ---
 
 notas:
-- kubeconfig
--- desde rancher dashboard copiar el kubeconfig en el servidor en ~/.kube/config
--- editar server: "https://IP/k8s/clusters/local" con la ip del contenedor
+
+kubeconfig
+- desde rancher dashboard copiar el kubeconfig en el servidor en ~/.kube/config
+- editar server: "https://IP/k8s/clusters/local" con la ip del contenedor
