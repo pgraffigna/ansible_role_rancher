@@ -1,0 +1,11 @@
+---
+- hosts: rancher
+  become: yes
+
+  roles:
+    - docker
+    - rancher
+    - kubectl
+    - kubecolor
+    
+    

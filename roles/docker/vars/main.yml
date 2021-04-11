@@ -1,0 +1,4 @@
+---
+usuario: usuario
+gpg: https://download.docker.com/linux/ubuntu/gpg 
+repo: https://download.docker.com/linux/ubuntu

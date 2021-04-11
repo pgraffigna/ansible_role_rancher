@@ -1,0 +1,5 @@
+[rancher]
+192.168.0.7
+
+[rancher:vars]
+ansible_ssh_user=usuario

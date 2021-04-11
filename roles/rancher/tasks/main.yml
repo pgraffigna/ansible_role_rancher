@@ -1,0 +1,21 @@
+---
+- name: Instalar dependencias de pip
+  apt: 
+    name: python3-pip 
+    state: latest
+
+
+- name: Instala dependencias para usar docker con ansible
+  pip:
+    name: docker-py
+
+- name: Descarga y crea el contenedor Rancher
+  docker_container:
+      name: rancher
+      image: rancher/rancher
+      restart_policy: always
+      privileged: yes
+      detach: yes
+      ports:
+        - "80:80"
+        - "443:443"
